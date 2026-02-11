@@ -1,5 +1,9 @@
 # Event Admin Backend
 
+Backend REST API for Event Booking Admin Dashboard built with Node.js, Express, Sequelize, SQLite, and JWT Authentication.
+
+# Event Admin Backend
+
 ## Overview
 This project is a backend REST API for an Event Booking Admin Dashboard built using:
 
@@ -84,3 +88,4 @@ All APIs tested using **Postman**.
 
 ## Author
 Sivakoti Reddy
+
