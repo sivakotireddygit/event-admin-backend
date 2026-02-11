@@ -1,0 +1,41 @@
+
+{
+    "info": {
+    "name": "Event Admin Backend",
+    "_postman_id": "12345",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Seed Admin",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/seed-admin"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"admin@mail.com\", \"password\": \"123456\" }"
+        },
+        "url": "http://localhost:3000/api/login"
+      }
+    },
+    {
+      "name": "Dashboard",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer YOUR_TOKEN" }
+        ],
+        "url": "http://localhost:3000/api/dashboard"
+      }
+    }
+  ]
+}
